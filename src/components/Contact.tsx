@@ -55,7 +55,7 @@ function Contact() {
         <div className="contact_wrapper">
           <h1>Contactez-moi</h1>
           <p>Un projet en tête qui attend de voir le jour ? Collaborons et concrétisons-le ensemble !</p>
-          <a href="mailto:ton.email@example.com" className="contact-button">Me contacter</a>
+          <a href="mailto:Steph.ranarison@gmail.com" className="contact-button">Me contacter</a>
         </div>
       </div>
     </div>
