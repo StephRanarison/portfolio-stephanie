@@ -1,29 +1,37 @@
 import React from "react";
-import avatar from '../assets/images/Stéphanie.jpg'
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import '../assets/styles/Main.scss';
+import avatar from "../assets/images/Stéphanie.jpg";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import "../assets/styles/Main.scss";
 
 function Main() {
-
   return (
-    <div className="container">
-      <div className="about-section">
-        <div className="image-wrapper">
-          <img src={avatar} alt="Avatar" />
+    <section className="hero">
+      <div className="hero__left">
+        <span className="hero__tag">Web designer & Intégratrice front</span>
+        <h1 className="hero__title">
+          Stéphanie <span className="hero__accent">Ranarison</span>
+        </h1>
+        <p className="hero__description">
+          Je conçois des interfaces intuitives, accessibles et alignées<br />
+          avec les besoins réels de vos utilisateurs.
+        </p>
+        <div className="hero__buttons">
+          <button className="btn btn--primary">Voir mes projets</button>
+          <button className="btn btn--secondary">Me contacter</button>
         </div>
-        <div className="content">
-          <div className="social_icons">
-            <a href="https://www.linkedin.com/in/stephanie-ranarison/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-          </div>
-          <h1>Stéphanie Ranarison</h1>
-          <p>Web designer / Intégrateur front</p>
-
-          <div className="mobile_social_icons">
-            <a href="https://www.linkedin.com/in/stephanie-ranarison/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-          </div>
+        <div className="hero__social">
+          <a href="https://www.linkedin.com/in/stephanie-ranarison/" target="_blank" rel="noreferrer">
+            <LinkedInIcon />
+            <span>LinkedIn</span>
+          </a>
         </div>
       </div>
-    </div>
+      <div className="hero__right">
+        <div className="hero__avatar">
+          <img src={avatar} alt="Stéphanie Ranarison" />
+        </div>
+      </div>
+    </section>
   );
 }
 
