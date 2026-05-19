@@ -21,7 +21,9 @@ body {
   font-size: 1.1rem;
   background-color: #f8f9fa;
 }
-
+#navigation {
+  background-color: #fff !important;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-size: 1rem;
@@ -112,6 +114,7 @@ h1, h2, .playfair {
       font-size: 1rem;
       color: $text-dark;
       letter-spacing: 0.5px;
+      font-family: 'Quicksand', sans-serif;
     }
 
     &:hover .nav-initial {
