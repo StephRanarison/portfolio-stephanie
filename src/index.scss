@@ -249,6 +249,9 @@ h1, h2, .playfair {
 
 // ========== RESPONSIVE ==========
 @media (max-width: 768px) {
+  .hero__description br {
+    display: block !important;
+  }
   .hero__left {
     margin-top: 40px;
   }
