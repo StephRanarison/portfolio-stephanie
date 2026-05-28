@@ -249,6 +249,9 @@ h1, h2, .playfair {
 
 // ========== RESPONSIVE ==========
 @media (max-width: 768px) {
+  .hero__left {
+    margin-top: 40px;
+  }
   .navbar-fixed-top {
     .navigation-bar {
       padding: 0.5rem 1rem;

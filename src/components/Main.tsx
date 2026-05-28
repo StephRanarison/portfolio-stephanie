@@ -4,6 +4,20 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "../assets/styles/Main.scss";
 
 function Main() {
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="hero">
       <div className="hero__left">
@@ -16,8 +30,12 @@ function Main() {
           avec les besoins réels de vos utilisateurs.
         </p>
         <div className="hero__buttons">
-          <button className="btn btn--primary">Voir mes projets</button>
-          <button className="btn btn--secondary">Me contacter</button>
+          <button className="btn btn--primary" onClick={scrollToProjects}>
+            Voir mes projets
+          </button>
+          <button className="btn btn--secondary" onClick={scrollToContact}>
+            Me contacter
+          </button>
         </div>
         <div className="hero__social">
           <a href="https://www.linkedin.com/in/stephanie-ranarison/" target="_blank" rel="noreferrer">
